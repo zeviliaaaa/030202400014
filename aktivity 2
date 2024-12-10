@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class Book {
+public:
+    string title;
+    string author;
+    double price;
+    
+    void displayDetails() {
+        cout << "Book Details:" << endl;
+        cout << "Title: " << title << endl;
+        cout << "Author: " << author << endl;
+        cout << "Price: $" << price << endl;
+    }
+};
+
+int main() {
+    Book book1, book2;
+ cout << "Enter details for Book 1:" << endl;
+    cout << "Title: ";
+    cin.ignore();
+    getline(cin, book1.title);
+        cout << "Author: ";
+    getline(cin, book1.author);
+    cout << "Price: ";
+    cin >> book1.price;
+
+cout << "\nEnter details for Book 2:" << endl;
+    cout << "Title: ";
+    cin.ignore();
+    getline(cin, book2.title);
+    cout << "Author: ";
+    getline(cin, book2.author);
+    cout << "Price: ";
+    cin >> book2.price;
+
+  cout << "\nDisplaying Book Details:" << endl;
+    book1.displayDetails();
+    cout << endl;
+    book2.displayDetails();
+
+    return 0;
+}
