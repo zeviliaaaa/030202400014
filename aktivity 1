@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string brand;
+    string model;
+    int year;
+
+    // Method untuk menampilkan informasi mobil
+    void displayInfo() {
+        cout << "Car Details: " << brand << " " << model << ", Year: " << year << endl;
+    }
+};
+
+int main() {
+    Car myCar;
+
+    // Input data mobil
+    cout << "Enter car brand: ";
+    cin >> myCar.brand;
+
+    cout << "Enter car model: ";
+    cin >> myCar.model;
+
+    cout << "Enter car year: ";
+    cin >> myCar.year;
+ mycar.displayinfo();
+ }
+ 
